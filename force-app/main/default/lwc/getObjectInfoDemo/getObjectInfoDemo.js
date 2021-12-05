@@ -29,7 +29,7 @@ export default class GetObjectInfoDemo extends LightningElement {
     @wire(getObjectInfos, {objectApiNames:'$objectApiNames'})
     objectInfosHandler({data,error}){
         if(data){
-            console.log(data)
+            //console.log(data)
             this.objectInfos = data
         }
         if(error){
