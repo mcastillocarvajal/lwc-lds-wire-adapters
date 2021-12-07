@@ -1,0 +1,44 @@
+<template>
+    <lightning-card title="createRecord Demo">
+        <div class="slds-p-around_medium">
+            <form class="createForm">
+                <lightning-input
+                    label="First Name"
+                    name="FirstName"
+                    onchange={changeHandler}
+                    type="text"
+                    class="slds-m-around_x-small">
+                </lightning-input>
+                <lightning-input
+                    label="Last Name"
+                    name="LastName"
+                    onchange={changeHandler}
+                    type="text"
+                    class="slds-m-around_x-small">
+                </lightning-input>
+                <lightning-input
+                    label="Title"
+                    name="Title"
+                    onchange={changeHandler}
+                    type="text"
+                    class="slds-m-around_x-small">
+                </lightning-input>
+                <lightning-input
+                    label="Phone"
+                    name="Phone"
+                    type="tel"
+                    onchange={changeHandler}
+                    class="slds-m-around_x-small">
+                </lightning-input>
+                <lightning-input
+                    label="Email"
+                    name="Email"
+                    type="email"
+                    onchange={changeHandler}
+                    class="slds-m-around_x-small">
+                </lightning-input>
+                <lightning-button label="Create Contact" variant="brand" onclick={createContact}></lightning-button>
+            </form>
+        </div>
+    </lightning-card>
+</template>
